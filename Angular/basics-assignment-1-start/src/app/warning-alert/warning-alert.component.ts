@@ -1,15 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
 
 @Component({
   selector: 'app-warning-alert',
-  templateUrl: './warning-alert.component.html',
-  styleUrls: ['./warning-alert.component.css']
+  template: '<p>Warning!</p>',
+  styles: [
+    `p {
+      color: red;
+    }`
+  ]
 })
-export class WarningAlertComponent implements OnInit {
-
+export class WarningAlertComponent {
   constructor() { }
-
-  ngOnInit(): void {
-  }
-
 }
